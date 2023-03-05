@@ -458,7 +458,8 @@ body {
 }
 
 .programs-undergradutate-slider-slide-btn-rightUp-ico svg,
-.alumni-services-call-to-action-btn-rightUp-ico svg {
+.alumni-services-call-to-action-btn-rightUp-ico svg,
+.event-btn-rightUp-ico svg {
     width: 19rem;
     height: auto;
 }
@@ -554,16 +555,19 @@ body {
     align-items: flex-end;
 }
 
-.view-all-progs-ico svg {
+.view-all-progs-ico svg,
+.view-all-events-ico svg {
     width: 19rem;
     height: auto;
 }
 
-.view-all-progs-link {
+.view-all-progs-link,
+.view-all-events-link {
     font-size: 22rem;
     line-height: 24rem;
     color: #FFC600;
-    margin-top: 16.52rem;
+    /* margin-top: 16.52rem; */
+    padding-top: 16.52rem;
 }
 
 /* /programs */
@@ -720,6 +724,7 @@ body {
 
 .selected-location svg {
     width: 9rem;
+    box-shadow: none;
 }
 
 .network-map-location-ico:hover .selected-location {
@@ -768,6 +773,7 @@ body {
 
 .pop-up-arrow-right-ico svg {
     width: 9rem;
+    box-shadow: none;
 }
 
 .network-map-location-ico:hover .selected-location-pop-up {
@@ -918,16 +924,18 @@ body {
 /* alumni */
 
 .alumni {
-    padding: 197rem 0 147rem;
+    padding: 198rem 0 147rem;
 }
 
-.alumni-title-wrapper {
+.alumni-title-wrapper,
+.events-title-wrapper {
     display: flex;
     align-items: center;
     margin-bottom: 58rem;
 }
 
-.alumni-title {
+.alumni-title,
+.events-title {
     font-size: 62rem;
     line-height: 70rem;
     text-transform: capitalize;
@@ -1015,6 +1023,27 @@ body {
     background-image: url(../img/photos/alumni4.jpg);
 }
 
+.alumni-tablink.clicked {
+    border: 8rem solid #003087;
+    position: relative;
+    overflow: visible;
+}
+
+.clicked::after {
+    content: "";
+    position: absolute;
+    background-image: url(
+    "../img/Polygon_alumni_tablink.svg");
+    width: 36rem;
+    height: 23rem;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    top: -24rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 .alumni-services-call-to-action {
     position: relative;
     width: 634rem;
@@ -1035,5 +1064,143 @@ body {
 
 .alumni-services-call-to-action-decor {
     right: -70rem;
+    bottom: -60rem;
+}
+
+/* /alumni */
+/* ================= */
+/* events */
+
+.events {
+    padding: 182rem 0 176rem;
+}
+
+.events-title-wrapper {
+    margin-bottom: 82.52rem;
+}
+
+.events-decor-line {
+    width: 760rem;
+    flex-shrink: 0;
+}
+
+.view-all-events-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 0 42.52rem 0 43rem;
+    width: 168.48rem;
+    flex-shrink: 0;
+}
+
+.view-all-events-ico {
+    background: #FFC600;
+}
+
+.view-all-events-link {
+    /* margin-top: 17rem; */
+    padding-top: 17rem;
+    color: #003087;
+}
+
+.events-decor-line-2 {
+    width: 117rem;
+    flex-shrink: 0;
+}
+
+.events-wrapper {
+    display: flex;
+    position: relative;
+    width: 1595rem;
+    height: 550rem;
+    background: #003087;
+    box-shadow: 0rem 4rem 20rem 10rem rgba(0, 48, 135, 0.05);
+    border-radius: 15rem;
+}
+
+.event-photo {
+    width: 547rem;
+    height: 550rem;
+    background-image: url(../img/photos/events.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 15rem 0 0 15rem;
+}
+
+.event-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 949rem;
+    height: 414.47rem;
+    margin: 59rem 68rem 76.53rem 31rem;
+}
+
+.event-content-date h1 {
+    font-size: 62rem;
+    line-height: 70rem;
+    text-transform: capitalize;
+    color: rgb(255 255 255 / 0.9);
+    margin-bottom: 15rem;
+}
+
+.event-content-date span {
+    font-family: 'Gotham-Bold';
+    font-size: 22rem;
+    line-height: 22rem;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    color: #FFC600;
+}
+
+.event-content-title {
+    line-height: 15px;
+    text-transform: capitalize;
+    margin-bottom: 37.62rem;
+}
+
+.event-content-time-btn-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.event-content-time {
+    font-family: 'Gotham-Bold';
+    font-size: 22rem;
+    line-height: 30rem;
+    color: #FFC600;
+}
+
+.event-content-time span {
+    position: relative;
+}
+
+.event-content-time span::before {
+    content: "";
+    background-image: url(../img/icons/location.svg);
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+    width: 14rem;
+    height: 16.86rem;
+    margin-right: 5rem;
+    box-shadow: 0px 4.56296px 4.56296px rgba(0, 47, 135, 0.2);
+}
+
+.event-content-time span::after {
+    content: "";
+    background-image: url(../img/icons/selected-location.svg);
+    background-size: cover;
+    background-position: center;
+    width: 5rem;
+    height: 5rem;
+    position: absolute;
+    top: 8rem;
+    left: 4rem;
+}
+
+.events-decor {
+    left: -69rem;
     bottom: -60rem;
 }
