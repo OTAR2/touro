@@ -55,8 +55,28 @@ body {
     /* margin: 0 auto; */
 }
 
+h1, h2, h3 {
+    font-style: normal;
+    font-weight: 500;
+}
+
+h1 {
+    font-size: 62rem;
+    line-height: 70rem;
+    text-transform: capitalize;
+}
+
+h2 {
+    font-size: 32rem;
+}
+
+h3 {
+    font-size: 22rem;
+    line-height: 24rem;
+}
+
 /* ================= */
-/* top-line */
+/* <top-line> */
 
 .top-line {
     display: flex;
@@ -126,9 +146,9 @@ body {
     margin: 0 5rem;
 }
 
-/* /top-line */
+/* </top-line> */
 /* ================= */
-/* header */
+/* <header> */
 
 .header {
     background-image: url(../img/photos/header.jpg);
@@ -220,9 +240,6 @@ body {
 }
 
 .header-offer-title {
-    font-size: 62rem;
-    line-height: 70rem;
-    text-transform: capitalize;
     /* width: 621rem; */
     margin-right: 68rem;
 }
@@ -234,6 +251,7 @@ body {
 .decor-line {
     display: block;
     height: 4rem;
+    width: 100%;
     background-color: #ffc600;
 }
 
@@ -242,9 +260,9 @@ body {
     margin: 60rem 0 56rem;
 }
 
-/* /header */
+/* </header> */
 /* ================= */
-/* offer-to-apply */
+/* <offer-to-apply> */
 
 .offer-to-apply {
     padding: 128rem 0;
@@ -278,8 +296,6 @@ body {
 }
 
 .offer-to-apply-content-title {
-    font-size: 32rem;
-    font-weight: 500;
     color: #003087;
     width: 588rem;
 }
@@ -325,10 +341,6 @@ body {
 }
 
 .call-to-action-offer-title {
-    font-size: 62rem;
-    font-weight: 500;
-    line-height: 70rem;
-    text-transform: capitalize;
     width: 514rem;
     margin-bottom: 31rem;
 }
@@ -354,32 +366,35 @@ body {
     margin-right: 36rem;
 }
 
-/* /offer-to-apply */
+/* </offer-to-apply> */
 /* ================= */
-/* programs */
+/* <programs> */
 
 .programs {
     padding: 130rem 0 232rem;
 }
 
-.programs-title-wrapper {
+.section-title-wrapper {
     display: flex;
     align-items: center;
+}
+
+.programs-title-wrapper {
     margin-bottom: 68rem;
 }
 
-.programs-title {
-    font-size: 62rem;
-    line-height: 70rem;
-    text-transform: capitalize;
+.section-title {
     color: #003087;
     margin-right: 70rem;
     flex-shrink: 0;
 }
 
-.programs-decor-line {
-    width: 980rem;
+.section-decor-line {
     flex-shrink: 0;
+}
+
+.programs-decor-line {
+    /* width: 980rem; */
 }
 
 .programs-undergradutate-wrapper {
@@ -453,13 +468,10 @@ body {
 }
 
 .programs-undergradutate-slider-slide-title {
-    font-size: 32rem;
     color: #003087;
 }
 
-.programs-undergradutate-slider-slide-btn-rightUp-ico svg,
-.alumni-services-call-to-action-btn-rightUp-ico svg,
-.event-btn-rightUp-ico svg {
+.rightUp-ico svg {
     width: 19rem;
     height: auto;
 }
@@ -514,18 +526,12 @@ body {
     flex-direction: column;
 }
 
-.programs-undergradutate-title {
-    font-size: 32rem;
-}
-
 .programs-undergradutate-decor-line {
-    width: 908rem;
+    /* width: 908rem; */
     margin: 24rem 0 35rem;
 }
 
 .programs-undergradutate-subtitle {
-    font-size: 22rem;
-    line-height: 24rem;
     color: #FFC600;
 }
 
@@ -536,10 +542,6 @@ body {
     letter-spacing: 0.3rem;
     width: 750rem;
     margin: 24rem 0 42rem;
-}
-
-.programs-undergradutate-title-2 {
-    font-size: 32rem;
 }
 
 .programs-undergradutate-title2-decor-line {
@@ -555,14 +557,7 @@ body {
     align-items: flex-end;
 }
 
-.view-all-progs-ico svg,
-.view-all-events-ico svg {
-    width: 19rem;
-    height: auto;
-}
-
-.view-all-progs-link,
-.view-all-events-link {
+.view-all-link {
     font-size: 22rem;
     line-height: 24rem;
     color: #FFC600;
@@ -570,9 +565,9 @@ body {
     padding-top: 16.52rem;
 }
 
-/* /programs */
+/* </programs> */
 /* ================= */
-/* networck */
+/* <networck> */
 
 .networck-why {
     background-image: url(../img/photos/network-why.jpg);
@@ -588,22 +583,19 @@ body {
 }
 
 .networck-title-wrapper {
-    display: flex;
-    align-items: center;
+    /* display: flex;
+    align-items: center; */
     margin-bottom: 80rem;
 }
 
-.networck-title {
-    font-size: 62rem;
-    line-height: 70rem;
-    text-transform: capitalize;
-    margin-right: 70rem;
-    flex-shrink: 0;
+.networck-title,
+.why-title {
+    color: #FFFFFF;
 }
 
 .networck-decor-line {
-    width: 1093rem;
-    flex-shrink: 0;
+    /* width: 1093rem; */
+    /* flex-shrink: 0; */
 }
 
 .networck-wrapper {
@@ -616,7 +608,6 @@ body {
 }
 
 .network-benefits-title {
-    font-size: 32rem;
     margin-bottom: 42rem;
 }
 
@@ -627,8 +618,6 @@ body {
 }
 
 .network-benefit-title {
-    font-size: 22rem;
-    line-height: 24rem;
     color: #FFC600;
     margin-bottom: 16rem;
 }
@@ -780,31 +769,23 @@ body {
     display: block;
 }
 
-/* /networck */
+/* </networck> */
 /* ================= */
-/* why */
+/* <why> */
 
 .why {
     padding: 175rem 0 281rem;
 }
 
 .why-title-wrapper {
-    display: flex;
-    align-items: center;
+    /* display: flex;
+    align-items: center; */
     margin-bottom: 67rem;
 }
 
-.why-title {
-    font-size: 62rem;
-    line-height: 70rem;
-    text-transform: capitalize;
-    margin-right: 70rem;
-    flex-shrink: 0;
-}
-
 .why-decor-line {
-    width: 1349rem;
-    flex-shrink: 0;
+    /* width: 1349rem; */
+    /* flex-shrink: 0; */
 }
 
 .why-subtitle-wrapper {
@@ -815,7 +796,6 @@ body {
 }
 
 .why-subtitle {
-    font-size: 32rem;
     width: 1048rem;
 }
 
@@ -899,7 +879,6 @@ body {
 }
 
 .why-slider-slide-title {
-    font-size: 32rem;
     color: #003087;
 }
 
@@ -919,34 +898,23 @@ body {
     background: linear-gradient(0deg, rgba(0, 48, 135, 0.1), rgba(0, 48, 135, 0.1)), #FFFFFF;
 }
 
-/* /why */
+/* </why> */
 /* ================= */
-/* alumni */
+/* <alumni> */
 
 .alumni {
     padding: 198rem 0 147rem;
 }
 
-.alumni-title-wrapper,
-.events-title-wrapper {
-    display: flex;
-    align-items: center;
+.alumni-title-wrapper {
+    /* display: flex;
+    align-items: center; */
     margin-bottom: 58rem;
 }
 
-.alumni-title,
-.events-title {
-    font-size: 62rem;
-    line-height: 70rem;
-    text-transform: capitalize;
-    margin-right: 70rem;
-    flex-shrink: 0;
-    color: #003087;
-}
-
 .alumni-decor-line {
-    width: 1264rem;
-    flex-shrink: 0;
+    /* width: 1264rem; */
+    /* flex-shrink: 0; */
 }
 
 .alumni-wrapper {
@@ -980,9 +948,6 @@ body {
 }
 
 .alumni-tabcontent h3 {
-    font-size: 22rem;
-    line-height: 24rem;
-    letter-spacing: 0.1rem;
     color: #003087;
 }
 
@@ -1058,7 +1023,7 @@ body {
     margin-bottom: 22rem;
 }
 
-.alumni-services-call-to-action-btn-rightUp-ico {
+.alumni-services-call-to-action-btn {
     float: right;
 }
 
@@ -1067,9 +1032,9 @@ body {
     bottom: -60rem;
 }
 
-/* /alumni */
+/* </alumni> */
 /* ================= */
-/* events */
+/* <events> */
 
 .events {
     padding: 182rem 0 176rem;
@@ -1081,7 +1046,7 @@ body {
 
 .events-decor-line {
     width: 760rem;
-    flex-shrink: 0;
+    /* flex-shrink: 0; */
 }
 
 .view-all-events-wrapper {
@@ -1093,19 +1058,21 @@ body {
     flex-shrink: 0;
 }
 
-.view-all-events-ico {
+.view-all-events-ico,
+.view-all-stories-ico {
     background: #FFC600;
 }
 
-.view-all-events-link {
+.view-all-events-link,
+.view-all-stories-link {
     /* margin-top: 17rem; */
     padding-top: 17rem;
     color: #003087;
 }
 
 .events-decor-line-2 {
-    width: 117rem;
-    flex-shrink: 0;
+    /* width: 117rem; */
+    /* flex-shrink: 0; */
 }
 
 .events-wrapper {
@@ -1138,9 +1105,6 @@ body {
 }
 
 .event-content-date h1 {
-    font-size: 62rem;
-    line-height: 70rem;
-    text-transform: capitalize;
     color: rgb(255 255 255 / 0.9);
     margin-bottom: 15rem;
 }
@@ -1204,3 +1168,175 @@ body {
     left: -69rem;
     bottom: -60rem;
 }
+
+/* </events> */
+/* ================= */
+/* <news> */
+
+.news {
+    padding: 198rem 0 247rem;
+}
+
+.news-decor-line {
+    /* width: 1177rem; */
+}
+
+.news-title-wrapper {
+    margin-bottom: 73rem;
+}
+
+.news-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.news-left-side {
+    width: 908rem;
+}
+
+.news-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 54rem;
+}
+
+.news-content-title {
+    color: #003087;
+    width: 624rem;
+}
+
+.view-all-stories-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.news-right-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.news-card {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10rem;
+}
+
+.news-card-large {
+    width: 908rem;
+    height: 524rem;
+    background-image: url(../img/photos/news1.jpg);
+}
+
+.card-blue-mask {
+    position: absolute;
+    bottom: 0rem;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(0, 48, 135, 0) 0%, rgba(0, 48, 135, 0.8) 19.79%);
+    box-shadow: 0rem 4rem 20rem rgba(0, 48, 135, 0.05);
+    border-radius: 10rem;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    
+    transition: 0.5s all ease;
+}
+
+.card-large-blue-mask {
+    height: 225rem;
+    padding: 45rem;
+}
+
+.card-content,
+.card-content-hover {
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17rem;
+    line-height: 26rem;
+    letter-spacing: 0.3rem;
+    margin-top: 15rem;
+}
+
+.card-large-content,
+.card-large-content-hover {
+    width: 679rem;
+}
+
+.card-content-hover {
+    display: none;
+}
+
+.news-card-btn {
+    position: absolute;
+    z-index: 100;
+}
+
+.news-card-large-btn {
+    right: 45rem;
+    bottom: 52rem;
+}
+
+.news-card-small-1,
+.news-card-small-2 {
+    width: 634rem;
+    height: 343rem;
+    background-image: url(../img/photos/news2.jpg);
+    box-shadow: 0rem 4rem 20rem 10rem rgba(0, 48, 135, 0.05);
+}
+
+.card-small-1-blue-mask {
+    height: 175rem;
+    padding: 0 26rem 40rem 31rem;
+}
+
+.card-small-1-content-hover,
+.card-small-2-content-hover {
+    width: 493rem;
+}
+
+.news-card-small-1-btn,
+.news-card-small-2-btn {
+    right: 26rem;
+    bottom: 40rem;
+}
+
+.news-card-small-2 {
+    background-image: url(../img/photos/news3.jpg);
+}
+
+.card-small-2-blue-mask {
+    height: 175rem;
+    padding: 0 26rem 47rem 31rem;
+}
+
+.news-card-btn:hover + .card-blue-mask {
+    height: 100%;
+    background: rgba(0, 48, 135, 0.8);
+    box-shadow: 0px 4px 20px rgba(0, 48, 135, 0.05);
+    transition: 0.5s all ease;
+}
+
+.news-card-btn:hover + .card-blue-mask .card-content {
+    display: none;
+}
+
+.news-card-btn:hover + .card-blue-mask .card-content-hover {
+    display: block;
+}
+
+.news-decor {
+    right: -63rem;
+    bottom: -56rem;
+}
+
+
+/* </news> */
+/* ================= */
+/* <> */
