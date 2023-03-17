@@ -1336,7 +1336,151 @@ h3 {
     bottom: -56rem;
 }
 
-
 /* </news> */
 /* ================= */
-/* <> */
+/* <photos> */
+
+.photos {
+    position: relative;
+    height: 2218rem;
+    background: #003087;
+    overflow: hidden;
+}
+
+.photos-decor {
+    z-index: 0;
+}
+
+.photos-decor1 {
+    top: 182rem;
+    left: 89rem;
+}
+
+.photos-decor2 {
+    top: 214rem;
+    right: 94rem;
+}
+
+.photos-decor3 {
+    top: 990rem;
+    right: 387rem;
+}
+
+.photos-decor4 {
+    top: 1571rem;
+    left: -215rem;
+}
+
+.w494 {
+    position: absolute;
+    width: 494rem;
+    border-radius: 15rem;
+}
+
+.w97 {
+    position: absolute;
+    width: 97rem;
+}
+
+.left {
+    border-radius: 0rem 15rem 15rem 0rem;
+}
+
+.right {
+    border-radius: 15rem 0rem 0rem 15rem;
+}
+
+.photos1 {
+    top: 152rem;
+    right: 158rem;
+}
+
+.photos2 {
+    top: 242rem;
+    left: 158rem;
+}
+
+.photos3 {
+    top: 456rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.photos4 {
+    top: 715rem;
+    left: 0;
+}
+
+.photos5 {
+    top: 905rem;
+    right: 158rem;
+}
+
+.photos6 {
+    top: 1035rem;
+    right: 0;
+}
+
+.photos7 {
+    top: 1055rem;
+    left: 158rem;
+}
+
+.photos8 {
+    top: 1661rem;
+    left: 0;
+}
+
+.photos9 {
+    top: 1967rem;
+    right: 0;
+}
+
+.start-journey-offer {
+    position: absolute;
+    width: 1197rem;
+    /* height: 626rem; */
+    bottom: 231rem;
+    left: 50%;
+    transform: translateX(-50%);
+    /* margin-bottom: 231rem; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.start-journey-offer-logo {
+    width: 251rem;
+    margin-bottom: 52rem;
+}
+
+.start-journey-offer-title {
+    /* width: auto; */
+    /* margin-bottom: 0; */
+}
+
+.start-journey-offer-intro {
+    /* width: auto; */
+    margin: 52rem 0 91rem;
+}
+
+.start-journey-offer-btn {
+    width: 245rem;
+}
+
+.start-journey-offer-btn-request-info {
+    margin-right: 60rem;
+}
+
+/* </photos> */
+/* ================= */
+/* <footer> */
+
+
+
+
+
+
+/* </footer> */
+/* ================= */
