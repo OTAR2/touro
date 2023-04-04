@@ -9,6 +9,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=Mulish:wght@400;600&display=swap" rel="stylesheet">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+/>
 </head>
 <body>
     <nav class="top-line">
@@ -33,12 +37,12 @@
                 </ul>
                 <form class="search" role="search">
                     <div class="search-wrapper">
-                        <input class="search-input" type="search" id="mySearch" name="q" placeholder="Search" aria-label="Search through site content">
+                        <input class="search-input" type="search" id="mySearch" name="q" placeholder="Search" aria-label="Search through site content" autocomplete="off">
                         <button class="search-btn">
                             <div class="search-ico">
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M9.16667 15.8333C12.8486 15.8333 15.8333 12.8486 15.8333 9.16667C15.8333 5.48477 12.8486 2.5 9.16667 2.5C5.48477 2.5 2.5 5.48477 2.5 9.16667C2.5 12.8486 5.48477 15.8333 9.16667 15.8333Z" stroke="#003087" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M17.5 17.5L13.875 13.875" stroke="#003087" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M9.16667 15.8333C12.8486 15.8333 15.8333 12.8486 15.8333 9.16667C15.8333 5.48477 12.8486 2.5 9.16667 2.5C5.48477 2.5 2.5 5.48477 2.5 9.16667C2.5 12.8486 5.48477 15.8333 9.16667 15.8333Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M17.5 17.5L13.875 13.875" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
                             </div>
                         </button>
@@ -148,61 +152,108 @@
                 </div>
                 <div class="programs-undergradutate-wrapper">
                     <img class="decor-points programs-undergradutate-decor " src="/img/Decor_points.png" alt="Decor Points">
-                    <div class="programs-undergradutate-slider">
-                        <div class="programs-undergradutate-slider-wrapper">
-                            <div class="programs-undergradutate-slider-slide programs-slide-1">
-                                <div class="programs-slide-titles-wrapper">
-                                    <span class="programs-undergradutate-slider-slide-subtitle-heading">
-                                        Undergraduate
-                                    </span>
-                                    <h2 class="programs-undergradutate-slider-slide-title">
-                                        Cyber-Security
-                                    </h2>
+                    <div class="programs-undergradutate-slider-container">
+                        <div class="swiper programs-undergradutate-slider">
+                            <div class="swiper-wrapper programs-undergradutate-slider-wrapper">
+                                <div class="swiper-slide programs-undergradutate-slider-slide programs-slide-1">
+                                    <div class="programs-slide-titles-wrapper">
+                                        <span class="programs-undergradutate-slider-slide-subtitle-heading">
+                                            Undergraduate
+                                        </span>
+                                        <h2 class="programs-undergradutate-slider-slide-title">
+                                            Cyber-Security
+                                        </h2>
+                                    </div>
+                                    <button class="round-btn programs-undergradutate-slider-slide-btn rightUp-ico">
+                                        <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.14377 15.3636C0.629262 15.8781 0.629262 16.7123 1.14377 17.2268C1.65828 17.7413 2.49247 17.7413 3.00698 17.2268L1.14377 15.3636ZM18.2421 1.44592C18.2421 0.718294 17.6523 0.128435 16.9246 0.128436L5.06722 0.128435C4.33959 0.128436 3.74973 0.718295 3.74973 1.44592C3.74973 2.17355 4.33959 2.76341 5.06722 2.76341L15.6071 2.76341L15.6071 13.3033C15.6071 14.031 16.197 14.6208 16.9246 14.6208C17.6522 14.6208 18.2421 14.031 18.2421 13.3033L18.2421 1.44592ZM3.00698 17.2268L17.8562 2.37753L15.993 0.514319L1.14377 15.3636L3.00698 17.2268Z" fill="#003087"/>
+                                        </svg>
+                                    </button>
                                 </div>
-                                <button class="round-btn programs-undergradutate-slider-slide-btn rightUp-ico">
-                                    <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M1.14377 15.3636C0.629262 15.8781 0.629262 16.7123 1.14377 17.2268C1.65828 17.7413 2.49247 17.7413 3.00698 17.2268L1.14377 15.3636ZM18.2421 1.44592C18.2421 0.718294 17.6523 0.128435 16.9246 0.128436L5.06722 0.128435C4.33959 0.128436 3.74973 0.718295 3.74973 1.44592C3.74973 2.17355 4.33959 2.76341 5.06722 2.76341L15.6071 2.76341L15.6071 13.3033C15.6071 14.031 16.197 14.6208 16.9246 14.6208C17.6522 14.6208 18.2421 14.031 18.2421 13.3033L18.2421 1.44592ZM3.00698 17.2268L17.8562 2.37753L15.993 0.514319L1.14377 15.3636L3.00698 17.2268Z" fill="#003087"/>
-                                    </svg>
-                                </button>
-                            </div>
-                            <div class="programs-undergradutate-slider-slide programs-slide-2">
-                                <div class="programs-slide-titles-wrapper">
-                                    <span class="programs-undergradutate-slider-slide-subtitle-heading">
-                                        Undergraduate
-                                    </span>
-                                    <h2 class="programs-undergradutate-slider-slide-title">
-                                        Psychology
-                                    </h2>
+                                <div class="swiper-slide programs-undergradutate-slider-slide programs-slide-2">
+                                    <div class="programs-slide-titles-wrapper">
+                                        <span class="programs-undergradutate-slider-slide-subtitle-heading">
+                                            Undergraduate
+                                        </span>
+                                        <h2 class="programs-undergradutate-slider-slide-title">
+                                            Psychology
+                                        </h2>
+                                    </div>
+                                    <button class="round-btn programs-undergradutate-slider-slide-btn rightUp-ico">
+                                        <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.14377 15.3636C0.629262 15.8781 0.629262 16.7123 1.14377 17.2268C1.65828 17.7413 2.49247 17.7413 3.00698 17.2268L1.14377 15.3636ZM18.2421 1.44592C18.2421 0.718294 17.6523 0.128435 16.9246 0.128436L5.06722 0.128435C4.33959 0.128436 3.74973 0.718295 3.74973 1.44592C3.74973 2.17355 4.33959 2.76341 5.06722 2.76341L15.6071 2.76341L15.6071 13.3033C15.6071 14.031 16.197 14.6208 16.9246 14.6208C17.6522 14.6208 18.2421 14.031 18.2421 13.3033L18.2421 1.44592ZM3.00698 17.2268L17.8562 2.37753L15.993 0.514319L1.14377 15.3636L3.00698 17.2268Z" fill="#003087"/>
+                                        </svg>
+                                    </button>
                                 </div>
-                                <button class="round-btn programs-undergradutate-slider-slide-btn rightUp-ico">
-                                    <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M1.14377 15.3636C0.629262 15.8781 0.629262 16.7123 1.14377 17.2268C1.65828 17.7413 2.49247 17.7413 3.00698 17.2268L1.14377 15.3636ZM18.2421 1.44592C18.2421 0.718294 17.6523 0.128435 16.9246 0.128436L5.06722 0.128435C4.33959 0.128436 3.74973 0.718295 3.74973 1.44592C3.74973 2.17355 4.33959 2.76341 5.06722 2.76341L15.6071 2.76341L15.6071 13.3033C15.6071 14.031 16.197 14.6208 16.9246 14.6208C17.6522 14.6208 18.2421 14.031 18.2421 13.3033L18.2421 1.44592ZM3.00698 17.2268L17.8562 2.37753L15.993 0.514319L1.14377 15.3636L3.00698 17.2268Z" fill="#003087"/>
-                                    </svg>
-                                </button>
-                            </div>
-                            <div class="programs-undergradutate-slider-slide programs-slide-3">
-                                <div class="programs-slide-titles-wrapper">
-                                    <span class="programs-undergradutate-slider-slide-subtitle-heading">
-                                        Undergraduate
-                                    </span>
-                                    <h2 class="programs-undergradutate-slider-slide-title">
-                                        Business <br> Management
-                                    </h2>
+                                <div class="swiper-slide programs-undergradutate-slider-slide programs-slide-3">
+                                    <div class="programs-slide-titles-wrapper">
+                                        <span class="programs-undergradutate-slider-slide-subtitle-heading">
+                                            Undergraduate
+                                        </span>
+                                        <h2 class="programs-undergradutate-slider-slide-title">
+                                            Business <br> Management
+                                        </h2>
+                                    </div>
+                                    <button class="round-btn programs-undergradutate-slider-slide-btn rightUp-ico">
+                                        <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.14377 15.3636C0.629262 15.8781 0.629262 16.7123 1.14377 17.2268C1.65828 17.7413 2.49247 17.7413 3.00698 17.2268L1.14377 15.3636ZM18.2421 1.44592C18.2421 0.718294 17.6523 0.128435 16.9246 0.128436L5.06722 0.128435C4.33959 0.128436 3.74973 0.718295 3.74973 1.44592C3.74973 2.17355 4.33959 2.76341 5.06722 2.76341L15.6071 2.76341L15.6071 13.3033C15.6071 14.031 16.197 14.6208 16.9246 14.6208C17.6522 14.6208 18.2421 14.031 18.2421 13.3033L18.2421 1.44592ZM3.00698 17.2268L17.8562 2.37753L15.993 0.514319L1.14377 15.3636L3.00698 17.2268Z" fill="#003087"/>
+                                        </svg>
+                                    </button>
                                 </div>
-                                <button class="round-btn programs-undergradutate-slider-slide-btn rightUp-ico">
-                                    <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M1.14377 15.3636C0.629262 15.8781 0.629262 16.7123 1.14377 17.2268C1.65828 17.7413 2.49247 17.7413 3.00698 17.2268L1.14377 15.3636ZM18.2421 1.44592C18.2421 0.718294 17.6523 0.128435 16.9246 0.128436L5.06722 0.128435C4.33959 0.128436 3.74973 0.718295 3.74973 1.44592C3.74973 2.17355 4.33959 2.76341 5.06722 2.76341L15.6071 2.76341L15.6071 13.3033C15.6071 14.031 16.197 14.6208 16.9246 14.6208C17.6522 14.6208 18.2421 14.031 18.2421 13.3033L18.2421 1.44592ZM3.00698 17.2268L17.8562 2.37753L15.993 0.514319L1.14377 15.3636L3.00698 17.2268Z" fill="#003087"/>
-                                    </svg>
-                                </button>
+                                <div class="swiper-slide programs-undergradutate-slider-slide programs-slide-1">
+                                    <div class="programs-slide-titles-wrapper">
+                                        <span class="programs-undergradutate-slider-slide-subtitle-heading">
+                                            Undergraduate
+                                        </span>
+                                        <h2 class="programs-undergradutate-slider-slide-title">
+                                            Cyber-Security
+                                        </h2>
+                                    </div>
+                                    <button class="round-btn programs-undergradutate-slider-slide-btn rightUp-ico">
+                                        <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.14377 15.3636C0.629262 15.8781 0.629262 16.7123 1.14377 17.2268C1.65828 17.7413 2.49247 17.7413 3.00698 17.2268L1.14377 15.3636ZM18.2421 1.44592C18.2421 0.718294 17.6523 0.128435 16.9246 0.128436L5.06722 0.128435C4.33959 0.128436 3.74973 0.718295 3.74973 1.44592C3.74973 2.17355 4.33959 2.76341 5.06722 2.76341L15.6071 2.76341L15.6071 13.3033C15.6071 14.031 16.197 14.6208 16.9246 14.6208C17.6522 14.6208 18.2421 14.031 18.2421 13.3033L18.2421 1.44592ZM3.00698 17.2268L17.8562 2.37753L15.993 0.514319L1.14377 15.3636L3.00698 17.2268Z" fill="#003087"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="swiper-slide programs-undergradutate-slider-slide programs-slide-2">
+                                    <div class="programs-slide-titles-wrapper">
+                                        <span class="programs-undergradutate-slider-slide-subtitle-heading">
+                                            Undergraduate
+                                        </span>
+                                        <h2 class="programs-undergradutate-slider-slide-title">
+                                            Psychology
+                                        </h2>
+                                    </div>
+                                    <button class="round-btn programs-undergradutate-slider-slide-btn rightUp-ico">
+                                        <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.14377 15.3636C0.629262 15.8781 0.629262 16.7123 1.14377 17.2268C1.65828 17.7413 2.49247 17.7413 3.00698 17.2268L1.14377 15.3636ZM18.2421 1.44592C18.2421 0.718294 17.6523 0.128435 16.9246 0.128436L5.06722 0.128435C4.33959 0.128436 3.74973 0.718295 3.74973 1.44592C3.74973 2.17355 4.33959 2.76341 5.06722 2.76341L15.6071 2.76341L15.6071 13.3033C15.6071 14.031 16.197 14.6208 16.9246 14.6208C17.6522 14.6208 18.2421 14.031 18.2421 13.3033L18.2421 1.44592ZM3.00698 17.2268L17.8562 2.37753L15.993 0.514319L1.14377 15.3636L3.00698 17.2268Z" fill="#003087"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="swiper-slide programs-undergradutate-slider-slide programs-slide-3">
+                                    <div class="programs-slide-titles-wrapper">
+                                        <span class="programs-undergradutate-slider-slide-subtitle-heading">
+                                            Undergraduate
+                                        </span>
+                                        <h2 class="programs-undergradutate-slider-slide-title">
+                                            Business <br> Management
+                                        </h2>
+                                    </div>
+                                    <button class="round-btn programs-undergradutate-slider-slide-btn rightUp-ico">
+                                        <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.14377 15.3636C0.629262 15.8781 0.629262 16.7123 1.14377 17.2268C1.65828 17.7413 2.49247 17.7413 3.00698 17.2268L1.14377 15.3636ZM18.2421 1.44592C18.2421 0.718294 17.6523 0.128435 16.9246 0.128436L5.06722 0.128435C4.33959 0.128436 3.74973 0.718295 3.74973 1.44592C3.74973 2.17355 4.33959 2.76341 5.06722 2.76341L15.6071 2.76341L15.6071 13.3033C15.6071 14.031 16.197 14.6208 16.9246 14.6208C17.6522 14.6208 18.2421 14.031 18.2421 13.3033L18.2421 1.44592ZM3.00698 17.2268L17.8562 2.37753L15.993 0.514319L1.14377 15.3636L3.00698 17.2268Z" fill="#003087"/>
+                                        </svg>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                         <div class="programs-undergradutate-slider-btns">
-                            <button class="round-btn programs-undergradutate-slider-btn-prev-ico">
+                            <button class="round-btn slider-btns-prev-next-ico slider-btn-prev-ico programs-slider-btn-prev-ico">
                                 <svg width="25" height="20" viewBox="0 0 25 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M23.5293 11.0585C24.2569 11.0585 24.8468 10.4686 24.8468 9.74097C24.8468 9.01334 24.2569 8.42348 23.5293 8.42348V11.0585ZM0.639511 8.80936C0.124998 9.32387 0.124998 10.1581 0.639511 10.6726L9.02396 19.057C9.53847 19.5715 10.3727 19.5715 10.8872 19.057C11.4017 18.5425 11.4017 17.7083 10.8872 17.1938L3.43433 9.74097L10.8872 2.28812C11.4017 1.77361 11.4017 0.939425 10.8872 0.424914C10.3727 -0.0895967 9.53847 -0.0895967 9.02396 0.424914L0.639511 8.80936ZM23.5293 8.42348L1.57112 8.42348V11.0585L23.5293 11.0585V8.42348Z" fill="#003087"/>
                                 </svg>
                             </button>
-                            <button class="round-btn programs-undergradutate-slider-btn-next-ico">
+                            <button class="round-btn slider-btns-prev-next-ico slider-btn-next-ico programs-slider-btn-next-ico">
                                 <svg width="25" height="20" viewBox="0 0 25 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M1.4028 8.42348C0.675173 8.42348 0.0853127 9.01334 0.0853127 9.74097C0.0853127 10.4686 0.675173 11.0585 1.4028 11.0585L1.4028 8.42348ZM24.2926 10.6726C24.8071 10.1581 24.8071 9.32387 24.2926 8.80936L15.9081 0.424914C15.3936 -0.0895967 14.5594 -0.0895967 14.0449 0.424914C13.5304 0.939425 13.5304 1.77361 14.0449 2.28812L21.4977 9.74097L14.0449 17.1938C13.5304 17.7083 13.5304 18.5425 14.0449 19.057C14.5594 19.5715 15.3936 19.5715 15.9081 19.057L24.2926 10.6726ZM1.4028 11.0585L23.361 11.0585V8.42348L1.4028 8.42348L1.4028 11.0585Z" fill="#003087"/>
                                 </svg>
@@ -498,21 +549,21 @@
                             Ad eos saepe lucilius, noster postulant philosophia ea usu, qui dicta sadipscing te.
                         </h2>
                         <div class="why-slider-btns">
-                            <button class="round-btn why-slider-btn-left-ico">
+                            <button class="round-btn slider-btns-prev-next-ico why-slider-btn-prev-ico">
                                 <svg width="25" height="20" viewBox="0 0 25 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M23.5293 11.0585C24.2569 11.0585 24.8468 10.4686 24.8468 9.74097C24.8468 9.01334 24.2569 8.42348 23.5293 8.42348V11.0585ZM0.639511 8.80936C0.124998 9.32387 0.124998 10.1581 0.639511 10.6726L9.02396 19.057C9.53847 19.5715 10.3727 19.5715 10.8872 19.057C11.4017 18.5425 11.4017 17.7083 10.8872 17.1938L3.43433 9.74097L10.8872 2.28812C11.4017 1.77361 11.4017 0.939425 10.8872 0.424914C10.3727 -0.0895967 9.53847 -0.0895967 9.02396 0.424914L0.639511 8.80936ZM23.5293 8.42348L1.57112 8.42348V11.0585L23.5293 11.0585V8.42348Z" fill="#003087"/>
                                 </svg>
                             </button>
-                            <button class="round-btn why-slider-btn-right-ico">
+                            <button class="round-btn slider-btns-prev-next-ico slider-btn-next-ico why-slider-btn-next-ico">
                                 <svg width="25" height="20" viewBox="0 0 25 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M1.4028 8.42348C0.675173 8.42348 0.0853127 9.01334 0.0853127 9.74097C0.0853127 10.4686 0.675173 11.0585 1.4028 11.0585L1.4028 8.42348ZM24.2926 10.6726C24.8071 10.1581 24.8071 9.32387 24.2926 8.80936L15.9081 0.424914C15.3936 -0.0895967 14.5594 -0.0895967 14.0449 0.424914C13.5304 0.939425 13.5304 1.77361 14.0449 2.28812L21.4977 9.74097L14.0449 17.1938C13.5304 17.7083 13.5304 18.5425 14.0449 19.057C14.5594 19.5715 15.3936 19.5715 15.9081 19.057L24.2926 10.6726ZM1.4028 11.0585L23.361 11.0585V8.42348L1.4028 8.42348L1.4028 11.0585Z" fill="#003087"/>
                                 </svg>
                             </button>
                         </div>
                     </div>
-                    <div class="why-slider">
-                        <div class="why-slider-wrapper">
-                            <div class="why-slider-slide why-slide-1">
+                    <div class="swiper why-slider">
+                        <div class="swiper-wrapper why-slider-wrapper">
+                            <div class="swiper-slide why-slider-slide why-slide-1">
                                 <div class="why-slide-title-wrapper">
                                     <div class="why-slider-slide-ico network-ico">
                                         <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -536,7 +587,7 @@
                                     </svg>
                                 </button>
                             </div>
-                            <div class="why-slider-slide why-slide-2">
+                            <div class="swiper-slide why-slider-slide why-slide-2">
                                 <div class="why-slide-title-wrapper">
                                     <div class="why-slider-slide-ico hierarchy-vertical-ico">
                                         <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -560,7 +611,7 @@
                                     </svg>
                                 </button>
                             </div>
-                            <div class="why-slider-slide why-slide-3">
+                            <div class="swiper-slide why-slider-slide why-slide-3">
                                 <div class="why-slide-title-wrapper">
                                     <div class="why-slider-slide-ico translate-ico">
                                         <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -584,7 +635,7 @@
                                     </svg>
                                 </button>
                             </div>
-                            <div class="why-slider-slide why-slide-4">
+                            <div class="swiper-slide why-slider-slide why-slide-4">
                                 <div class="why-slide-title-wrapper">
                                     <div class="why-slider-slide-ico bulb-ico">
                                         <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -608,7 +659,7 @@
                                     </svg>
                                 </button>
                             </div>
-                            <div class="why-slider-slide why-slide-5">
+                            <div class="swiper-slide why-slider-slide why-slide-5">
                                 <div class="why-slide-title-wrapper">
                                     <div class="why-slider-slide-ico hierarchy-ico">
                                         <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -632,7 +683,7 @@
                                     </svg>
                                 </button>
                             </div>
-                            <div class="why-slider-slide why-slide-6">
+                            <div class="swiper-slide why-slider-slide why-slide-6">
                                 <div class="why-slide-title-wrapper">
                                     <div class="why-slider-slide-ico content-book-open-ico">
                                         <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -656,7 +707,7 @@
                                     </svg>
                                 </button>
                             </div>
-                            <div class="why-slider-slide why-slide-7">
+                            <div class="swiper-slide why-slider-slide why-slide-7">
                                 <div class="why-slide-title-wrapper">
                                     <div class="why-slider-slide-ico user-multiple-ico">
                                         <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -680,7 +731,7 @@
                                     </svg>
                                 </button>
                             </div>
-                            <div class="why-slider-slide why-slide-8">
+                            <div class="swiper-slide why-slider-slide why-slide-8">
                                 <div class="why-slide-title-wrapper">
                                     <div class="why-slider-slide-ico like-ico">
                                         <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -720,35 +771,35 @@
 
                 <div class="alumni-wrapper">
                     <div class="alumni-content">
-                        <div id="Andreas" class="alumni-tabcontent active">
+                        <div id="andreas" class="alumni-tabcontent active">
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel odit sint eligendi deleniti fugiat corporis in dolorem officiis! Quos labore ab suscipit, consectetur perspiciatis quidem quaerat excepturi hic dignissimos eveniet fuga, non expedita. Quidem iure dolores natus officiis quas ab? Facilis suscipit nisi cupiditate, ipsam accusamus dolor earum ullam debitis?
                             </p>
                             <h3>Andreas Cooper at Google</h3>
                         </div>
-                        <div id="Freddie" class="alumni-tabcontent">
+                        <div id="freddie" class="alumni-tabcontent">
                             <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod officia vitae quibusdam impedit explicabo earum modi saepe eum quidem maiores, possimus ut dolorum blanditiis nesciunt et magnam placeat nostrum incidunt! Cumque repellendus eius minus ipsum quaerat fugiat maxime, eligendi dolores odio, amet repudiandae dolor veritatis. Numquam dolorum labore ratione? Quasi.
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod officia vitae quibusdam impedit explicabo earum modi saepe eum quidem maiores, possimus ut dolorum blanditiis nesciunt et magnam placeat nostrum incidunt! Cumque repellendus eius minus ipsum quaerat fugiat maxime, eligendi dolores odio, amet repudiandae dolor veritatis. Numquam dolorum labore ratione quasi.
                             </p>
                             <h3>Freddie Hendrix at Google</h3>
                         </div>
-                        <div id="Dan" class="alumni-tabcontent">
+                        <div id="dan" class="alumni-tabcontent">
                             <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae reprehenderit odio aperiam cupiditate facere voluptatum doloribus voluptas deleniti dignissimos, saepe deserunt tempore, amet atque aut sit eaque tenetur rem neque accusantium necessitatibus veritatis, quas officia! Libero consequatur quae, dolore, voluptatem explicabo facilis aperiam, placeat sed recusandae illo! Quaerat, excepturi?
                             </p>
                             <h3>Dan Connolly at Google</h3>
                         </div>
-                        <div id="Connie" class="alumni-tabcontent">
+                        <div id="connie" class="alumni-tabcontent">
                             <p>
                                 Carrie graduated with a BA in Psychology from Touro College Berlin in 2017. She went on to King’s College London to do two MSc studies and working for the EU-AIMS, focusing on Autism. At the moment she is doing her PhD in Computing at the University of Portsmouth, still focusing on Autism. She is a part of an interdisciplinary team of computer scientists, engineers and her as the psychologist.
                             </p>
                             <h3>Connie Robertson at Google</h3>
                         </div>
                         <div class="alumni-tabs">
-                            <button class="alumni-tablink andreas-tablink clicked"></button>
-                            <button class="alumni-tablink freddie-tablink"></button>
-                            <button class="alumni-tablink dan-tablink"></button>
-                            <button class="alumni-tablink connie-tablink"></button>
+                            <button class="alumni-tablink andreas-tablink clicked" data-name="andreas"></button>
+                            <button class="alumni-tablink freddie-tablink" data-name="freddie"></button>
+                            <button class="alumni-tablink dan-tablink" data-name="dan"></button>
+                            <button class="alumni-tablink connie-tablink" data-name="connie"></button>
                         </div>
                     </div>
                     <div class="alumni-services-call-to-action">
@@ -1007,6 +1058,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
     <script src="./js/script.js"></script>
 
